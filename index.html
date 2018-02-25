@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+    <title>Wikipedia Viewer</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wikipedia Viewer</h1>
+        <div class="search-box-area search-box-area--fake" id="search-box-area--fake">
+
+            <div class="search-form">
+                <input type="search" id="search-input--fake" class="search-input" placeholder="Search..." autocomplete="off">
+                <button class="submit-search" id="" name="search" type="submit"><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M8.72540529,11.3467256 C7.90760672,11.7644185 6.98131488,12 6,12 C2.68629134,12 0,9.31370866 0,6 C0,2.68629134 2.68629134,0 6,0 C9.31370866,0 12,2.68629134 12,6 C12,7.24246438 11.6223475,8.39672324 10.9755697,9.35424938 L15.1819805,13.5606602 C15.1819805,13.5606602 15.8890873,14.267767 15.1819805,14.9748737 L14.4748737,15.6819805 C13.767767,16.3890873 13.0606602,15.6819805 13.0606602,15.6819805 L8.72540529,11.3467256 L8.72540529,11.3467256 Z M2,6 C2,3.79086084 3.79086084,2 6,2 C8.20913916,2 10,3.79086084 10,6 C10,8.20913916 8.20913916,10 6,10 C3.79086084,10 2,8.20913916 2,6 L2,6 Z" id="Shape" fill="#FFFFFF"></path></g></svg></button>
+            </div>
+        </div>
+        <div class="search-box-area search-box-area--overlay overlay-scale" id="search-box-area">
+
+            <div class="search-form">
+                <input type="search" id="search-input" class="search-input" placeholder="Search..." autocomplete="off">
+                <button class="submit-search" id="submit-search" name="search" type="submit"><svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M8.72540529,11.3467256 C7.90760672,11.7644185 6.98131488,12 6,12 C2.68629134,12 0,9.31370866 0,6 C0,2.68629134 2.68629134,0 6,0 C9.31370866,0 12,2.68629134 12,6 C12,7.24246438 11.6223475,8.39672324 10.9755697,9.35424938 L15.1819805,13.5606602 C15.1819805,13.5606602 15.8890873,14.267767 15.1819805,14.9748737 L14.4748737,15.6819805 C13.767767,16.3890873 13.0606602,15.6819805 13.0606602,15.6819805 L8.72540529,11.3467256 L8.72540529,11.3467256 Z M2,6 C2,3.79086084 3.79086084,2 6,2 C8.20913916,2 10,3.79086084 10,6 C10,8.20913916 8.20913916,10 6,10 C3.79086084,10 2,8.20913916 2,6 L2,6 Z" id="Shape" fill="#FFFFFF"></path></g></svg></button>
+                <ul id="autocomplete-box" class="hide autocomplete-box"></ul>
+            </div>
+            <span class="search-close" id="search-close"></span>
+        </div>
+        
+        <a href="http://en.wikipedia.org/wiki/Special:Random" class="random-article">Random Article</a>
+
+        <div class="search-results" id="search-results">
+            
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+	<div style="text-align:center;">Made by <a class="cyan-text" href="http://github.com/sidf3ar">Siddharth Nair</a></div>
+</div>
+
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
